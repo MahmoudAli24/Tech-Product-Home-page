@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --btn-color: #807cf4;
+}
+.head {
+  font-family: "Lato", sans-serif;
+}
+.leg {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Start Nav */
+.nav-link {
+  color: #4b647e;
+}
+.nav-icon {
+  font-size: 26px;
+  margin-left: 10px;
+  margin-top: 8px;
+  color: #565555;
+}
+.btnn {
+  font-weight: 300;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--btn-color);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+/* End Nav */
+/* Start Header */
+.header .imgs img {
+  width: 458px;
+  height: 279px;
+}
+.header .text button {
+  border-radius: 20px;
+  background-color: var(--btn-color);
+  font-weight: 300;
+  border: none;
+  font-size: 16px;
+  height: 35px;
+  width: 105px;
+  color: white;
+}
+
+.header .text {
+  color: #534d4d;
+}
+.header .text h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.header .imgs::before {
+  content: "";
+  background: url("img/Path\ 1201.png") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  width: 472px;
+  height: 294px;
+}
+@media (max-width: 426px) {
+  .header .imgs::before {
+    width: 379px;
+    height: 236px;
+    left: 13px;
+  }
+  .header .imgs img {
+    width: 402px;
+    height: 265px;
+  }
+}
+@media (max-width: 376px) {
+  .header .imgs::before {
+    left: 9px;
+    width: 345px;
+    height: 215px;
+  }
+  .header .imgs img {
+    width: 360px;
+    height: 239px;
+  }
+}
+@media (max-width: 321px) {
+  .header .imgs::before {
+    left: 1px;
+    width: 309px;
+    height: 192px;
+  }
+  .header .imgs img {
+    width: 309px;
+    height: 221px;
+  }
+}
+/* End Header */
+/* Start Services */
+.services .text p {
+  width: 67%;
+  color: #747474;
+}
+.services .text h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3d37f1;
+}
+.services .text h2 {
+  font-weight: 300;
+  font-size: 40px;
+  color: #5a5454;
+}
+.cards {
+  row-gap: 25px;
+  column-gap: 10px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 340px;
+  height: 450px;
+  box-shadow: #c5c3f93e 0px 4px 12px;
+}
+.item button {
+  width: 110px;
+  height: 43px;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4b647e;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.item .icon {
+  margin-bottom: 40px;
+}
+.item p {
+  margin-top: 20px;
+}
+.cards .one {
+  background-image: linear-gradient(
+    to bottom,
+    #a5a2f6,
+    #8e89f7,
+    #766ff6,
+    #5c54f4,
+    #3d37f1
+  );
+}
+
+/* End Services */

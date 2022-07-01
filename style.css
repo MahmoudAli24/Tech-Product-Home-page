@@ -3,6 +3,8 @@
 }
 :root {
   --btn-color: #807cf4;
+  --p-color: #747474;
+  --head-color: #5a5454;
 }
 .head {
   font-family: "Lato", sans-serif;
@@ -33,9 +35,23 @@
 }
 /* End Nav */
 /* Start Header */
+.header .imgs {
+  width: 48%;
+}
+.header .text {
+  width: 48%;
+  color: #534d4d;
+}
+@media (max-width: 768px) {
+  .header .imgs {
+    width: 80%;
+  }
+  .header .text {
+    width: 100%;
+  }
+}
 .header .imgs img {
-  width: 458px;
-  height: 279px;
+  width: 100%;
 }
 .header .text button {
   border-radius: 20px;
@@ -48,56 +64,21 @@
   color: white;
 }
 
-.header .text {
-  color: #534d4d;
-}
 .header .text h1 {
   font-weight: bold;
   font-size: 50px;
 }
 .header .imgs::before {
   content: "";
-  background: url("img/Path\ 1201.png") no-repeat center center/cover;
+  background: url(img/Path\ 1201.png) no-repeat center center/cover;
   top: 0;
   left: 0;
   position: absolute;
   z-index: -1;
-  width: 472px;
-  height: 294px;
+  width: 96%;
+  height: 98%;
 }
-@media (max-width: 426px) {
-  .header .imgs::before {
-    width: 379px;
-    height: 236px;
-    left: 13px;
-  }
-  .header .imgs img {
-    width: 402px;
-    height: 265px;
-  }
-}
-@media (max-width: 376px) {
-  .header .imgs::before {
-    left: 9px;
-    width: 345px;
-    height: 215px;
-  }
-  .header .imgs img {
-    width: 360px;
-    height: 239px;
-  }
-}
-@media (max-width: 321px) {
-  .header .imgs::before {
-    left: 1px;
-    width: 309px;
-    height: 192px;
-  }
-  .header .imgs img {
-    width: 309px;
-    height: 221px;
-  }
-}
+
 /* End Header */
 /* Start Services */
 .services .text p {
@@ -126,7 +107,7 @@
   padding: 20px;
   width: 340px;
   height: 450px;
-  box-shadow: #c5c3f93e 0px 4px 12px;
+  box-shadow: #c5c3f93e 0 4px 12px;
 }
 .item button {
   width: 110px;
@@ -138,7 +119,7 @@
   font-weight: 400;
   color: #4b647e;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
 }
 .item .icon {
   margin-bottom: 40px;
@@ -158,3 +139,60 @@
 }
 
 /* End Services */
+/* Start Camera */
+.camera .imgs img {
+  width: 450px;
+}
+.camera .imgs::before {
+  content: "";
+  background: url(img/Path\ 1250.png) no-repeat center center/cover;
+  top: -43px;
+  left: 17px;
+  position: absolute;
+  z-index: -1;
+  width: 95%;
+  height: 125%;
+}
+.camera .text {
+  width: 50%;
+  padding: 10px;
+}
+.camera .text h3 {
+  color: var(--head-color);
+  font-weight: bold;
+  font-size: 22px;
+}
+.camera .text p {
+  color: var(--p-color);
+  font-weight: 400;
+  font-size: 18px;
+}
+.camera .icons {
+  width: 100%;
+}
+.camera .icons p {
+  color: var(--p-color);
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .camera .text {
+    width: 96%;
+  }
+  .camera .imgs img {
+    width: 395px;
+  }
+}
+@media (max-width: 426px) {
+  .camera .imgs img {
+    width: 360px;
+  }
+}
+@media (max-width: 320px) {
+  .camera .imgs img {
+    width: 290px;
+  }
+}
+/* End Camera */
